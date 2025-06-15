@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "products": "Ürünler",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+  "home": {
+    "hero": {
+      "title": "BNG-SARL'a Hoş Geldiniz",
+      "subtitle": "Tavuk Dağıtımında Güvenilir Ortağınız",
+      "word1": "MÜKEMMELLİK",
+      "word2": "KALİTE",
+      "word3": "YENİLİK",
+      "word4": "GELENEK"
+    },
+    "values": {
+      "title": "Temel Değerlerimiz",
+      "excellence": "Her Detayda Mükemmellik",
+      "quality_desc": "Sadece en iyi kaliteyi sunarız.",
+      "reliability_desc": "Bize her zaman güvenebilirsiniz.",
+      "service_desc": "Beklentileri aşan hizmet.",
+      "quality": "Kalite",
+      "reliability": "Güvenilirlik",
+      "service": "Müşteri Hizmetleri"
+    },
+    "stats": {
+      "years": "15+",
+      "yearsLabel": "Yıllık Deneyim",
+      "clients": "1000+",
+      "clientsLabel": "Mutlu Müşteri",
+      "support": "24/7",
+      "supportLabel": "Müşteri Desteği"
+    }
+  },
+  "products": {
+    "title": "Ürünlerimiz",
+    "filter": "Ürünleri Filtrele",
+    "categories": {
+      "all": "Tümü",
+      "fresh": "Taze Tavuk",
+      "frozen": "Dondurulmuş Tavuk",
+      "processed": "İşlenmiş Ürünler"
+    },
+    "viewDetails": "Detayları Gör"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "description": "BNG-SARL, en yüksek hizmet ve güvenilirlik standartlarını koruyarak premium kalitede ürünler sunmaya kendini adamış lider bir tavuk dağıtım şirketidir.",
+    "mission": "Misyonumuz, dağıtım ve hizmette mükemmellik yoluyla gıda güvenliğini ve müşteri memnuniyetini sağlayarak yüksek kaliteli tavuk ürünlerinin önde gelen tedarikçisi olmaktır.",
+    "values": {
+      "title": "Temel Değerlerimiz",
+      "quality": "Premium Kalite",
+      "quality_desc": "Her aşamada sıkı kalite kontrolü uygulayarak, müşterilerimize yalnızca en iyi tavuk ürünlerinin ulaşmasını sağlıyoruz.",
+      "sustainability": "Sürdürülebilirlik",
+      "sustainability_desc": "Toplumumuza ve çevremize fayda sağlayan sürdürülebilir uygulamalara bağlıyız.",
+      "innovation": "İnovasyon",
+      "innovation_desc": "Müşterilerimize daha iyi hizmet vermek için süreçlerimizi ve hizmetlerimizi sürekli geliştiriyoruz.",
+      "integrity": "Dürüstlük",
+      "integrity_desc": "İşimizi en yüksek dürüstlük ve şeffaflık standartlarıyla yürütüyoruz."
+    },
+    "storyTitle": "HİKAYEMİZ",
+    "legacyTitle": "Mirasımız",
+    "principlesTitle": "TEMEL İLKELERİMİZ",
+    "purposeTitle": "AMACIMIZ",
+    "missionTitle": "Misyonumuz",
+    "excellenceDefined": "MÜKEMMELLİK TANIMI",
+    "experienceExcellence": "Mükemmelliği Yaşa",
+    "excellenceQuote": "Her tanede mükemmelliğe olan bağlılığımız, her an mükemmelliğe olan adanmışlığımız vardır."
+  },
+  "contact": {
+    "title": "İletişim",
+    "form": {
+      "name": "İsim",
+      "email": "E-posta",
+      "message": "Mesaj",
+      "submit": "Mesaj Gönder"
+    },
+    "intro": "Aşağıdaki kanallardan herhangi biriyle bizimle iletişime geçin. Size yardımcı olmaktan mutluluk duyarız.",
+    "info": {
+      "visitUs": "Bizi Ziyaret Edin",
+      "address": "123 Ana Cadde, Şehir, Ülke 12345",
+      "headquarters": "Merkez ofisimiz",
+      "callUs": "Bizi Arayın",
+      "phone": "+1 (234) 567-890",
+      "hours": "Pazartesi-Cuma, 9:00-18:00",
+      "emailUs": "Bize E-posta Gönderin",
+      "email": "info@bng-sarl.com",
+      "response": "24 saat içinde yanıt vereceğiz"
+    },
+    "social": {
+      "followUs": "Bizi sosyal medyada takip edin",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    }
+  },
+  "footer": {
+    "slogan": "Tavuk dağıtımında güvenilir ortağınız, kalite ve güvenilirliğe bağlı.",
+    "navigation": "Navigasyon",
+    "contact": "İletişim",
+    "address1": "123 Ana Cadde",
+    "address2": "Şehir, Ülke 12345",
+    "phone": "+1 (234) 567-890",
+    "email": "info@bng-sarl.com",
+    "followUs": "Bizi Takip Edin",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "stats": {
+    "mainTitle": "Bizi Farklı Kılan",
+    "quality": {
+      "title": "Premium Kalite Standartları",
+      "description": "Her ürün sıkı kalite kontrolünden geçer, sofranıza yalnızca en kaliteli tavukların ulaşmasını sağlar."
+    },
+    "distribution": {
+      "title": "Stratejik Dağıtım Ağı",
+      "description": "Optimize edilmiş lojistik ve stratejik ortaklıklarla, tüm bölgelerde taze teslimat sağlıyoruz."
+    },
+    "reliability": {
+      "title": "Güvenilir Ortak",
+      "description": "İtibarımız tutarlı hizmet, şeffaf uygulamalar ve uzun vadeli ilişkiler üzerine kuruludur."
+    }
+  }
+} 

@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Welcome to BNG-SARL",
+      "subtitle": "Your Trusted Partner in Chicken Distribution",
+      "word1": "EXCELLENCE",
+      "word2": "QUALITY",
+      "word3": "INNOVATION",
+      "word4": "TRADITION"
+    },
+    "values": {
+      "title": "Our Core Values",
+      "excellence": "Excellence in Every Detail",
+      "quality_desc": "We deliver only the best quality.",
+      "reliability_desc": "You can always count on us.",
+      "service_desc": "Service that exceeds expectations.",
+      "quality": "Quality",
+      "reliability": "Reliability",
+      "service": "Customer Service"
+    },
+    "stats": {
+      "years": "15+",
+      "yearsLabel": "Years Experience",
+      "clients": "1000+",
+      "clientsLabel": "Happy Clients",
+      "support": "24/7",
+      "supportLabel": "Customer Support"
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "filter": "Filter Products",
+    "categories": {
+      "all": "All",
+      "fresh": "Fresh Chicken",
+      "frozen": "Frozen Chicken",
+      "processed": "Processed Products"
+    },
+    "viewDetails": "View Details"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "BNG-SARL is a leading chicken distribution company committed to delivering premium quality products while maintaining the highest standards of service and reliability.",
+    "mission": "Our mission is to be the leading provider of high-quality chicken products, ensuring food security and customer satisfaction through excellence in distribution and service.",
+    "values": {
+      "title": "Our Core Values",
+      "quality": "Premium Quality",
+      "quality_desc": "We ensure only the finest chicken products reach our customers, maintaining strict quality control at every step.",
+      "sustainability": "Sustainability",
+      "sustainability_desc": "We are committed to sustainable practices that benefit our community and environment.",
+      "innovation": "Innovation",
+      "innovation_desc": "We continuously improve our processes and services to better serve our customers.",
+      "integrity": "Integrity",
+      "integrity_desc": "We conduct our business with the highest standards of honesty and transparency."
+    },
+    "storyTitle": "OUR STORY",
+    "legacyTitle": "Our Legacy",
+    "principlesTitle": "OUR PRINCIPLES",
+    "purposeTitle": "OUR PURPOSE",
+    "missionTitle": "Our Mission",
+    "excellenceDefined": "EXCELLENCE DEFINED",
+    "experienceExcellence": "Experience Excellence",
+    "excellenceQuote": "In every grain lies our commitment to perfection, in every moment our dedication to excellence."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "intro": "Get in touch with us through any of the following channels. We're here to assist you.",
+    "info": {
+      "visitUs": "Visit Us",
+      "address": "123 Main Street, City, Country 12345",
+      "headquarters": "Our headquarters location",
+      "callUs": "Call Us",
+      "phone": "+1 (234) 567-890",
+      "hours": "Monday to Friday, 9am to 6pm",
+      "emailUs": "Email Us",
+      "email": "info@bng-sarl.com",
+      "response": "We'll respond within 24 hours"
+    },
+    "social": {
+      "followUs": "Follow us on social media",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    }
+  },
+  "footer": {
+    "slogan": "Your trusted partner in chicken distribution, committed to quality and reliability.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "address1": "123 Main Street",
+    "address2": "City, Country 12345",
+    "phone": "+1 (234) 567-890",
+    "email": "info@bng-sarl.com",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved."
+  },
+  "stats": {
+    "mainTitle": "What Sets Us Apart",
+    "quality": {
+      "title": "Premium Quality Standards",
+      "description": "Every product undergoes rigorous quality control, ensuring only the finest poultry reaches your table."
+    },
+    "distribution": {
+      "title": "Strategic Distribution Network",
+      "description": "With optimized logistics and strategic partnerships, we ensure fresh delivery across regions."
+    },
+    "reliability": {
+      "title": "Trusted Partner",
+      "description": "Our reputation is built on consistent service, transparent practices, and long-term relationships."
+    }
+  }
+} 

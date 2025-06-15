@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "products": "Produits",
+    "about": "À Propos",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Bienvenue chez BNG-SARL",
+      "subtitle": "Votre Partenaire de Confiance dans la Distribution de Poulet",
+      "word1": "EXCELLENCE",
+      "word2": "QUALITÉ",
+      "word3": "INNOVATION",
+      "word4": "TRADITION"
+    },
+    "values": {
+      "title": "Nos Valeurs Fondamentales",
+      "excellence": "L'excellence dans chaque détail",
+      "quality_desc": "Nous livrons uniquement la meilleure qualité.",
+      "reliability_desc": "Vous pouvez toujours compter sur nous.",
+      "service_desc": "Un service qui dépasse les attentes.",
+      "quality": "Qualité",
+      "reliability": "Fiabilité",
+      "service": "Service Client"
+    },
+    "stats": {
+      "years": "15+",
+      "yearsLabel": "Années d'expérience",
+      "clients": "1000+",
+      "clientsLabel": "Clients satisfaits",
+      "support": "24/7",
+      "supportLabel": "Support client"
+    }
+  },
+  "products": {
+    "title": "Nos Produits",
+    "filter": "Filtrer les Produits",
+    "categories": {
+      "all": "Tous",
+      "fresh": "Poulet Frais",
+      "frozen": "Poulet Congelé",
+      "processed": "Produits Transformés"
+    },
+    "viewDetails": "Voir les Détails"
+  },
+  "about": {
+    "title": "À Propos de Nous",
+    "description": "BNG-SARL est une entreprise leader dans la distribution de poulet, engagée à fournir des produits de qualité premium tout en maintenant les plus hauts standards de service et de fiabilité.",
+    "mission": "Notre mission est d'être le principal fournisseur de produits de poulet de haute qualité, assurant la sécurité alimentaire et la satisfaction client grâce à l'excellence dans la distribution et le service.",
+    "values": {
+      "title": "Nos Valeurs Fondamentales",
+      "quality": "Qualité Premium",
+      "quality_desc": "Nous garantissons que seuls les meilleurs produits de poulet parviennent à nos clients, en maintenant un contrôle qualité strict à chaque étape.",
+      "sustainability": "Durabilité",
+      "sustainability_desc": "Nous nous engageons dans des pratiques durables qui bénéficient à notre communauté et à notre environnement.",
+      "innovation": "Innovation",
+      "innovation_desc": "Nous améliorons continuellement nos processus et services pour mieux servir nos clients.",
+      "integrity": "Intégrité",
+      "integrity_desc": "Nous menons nos activités selon les plus hauts standards d'honnêteté et de transparence."
+    },
+    "storyTitle": "NOTRE HISTOIRE",
+    "legacyTitle": "Notre Héritage",
+    "principlesTitle": "NOS PRINCIPES",
+    "purposeTitle": "NOTRE OBJECTIF",
+    "missionTitle": "Notre Mission",
+    "excellenceDefined": "L'EXCELLENCE DÉFINIE",
+    "experienceExcellence": "Vivre l'Excellence",
+    "excellenceQuote": "Dans chaque grain réside notre engagement envers la perfection, à chaque instant notre dévouement à l'excellence."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Envoyer le Message"
+    },
+    "intro": "Contactez-nous via l'un des canaux suivants. Nous sommes là pour vous aider.",
+    "info": {
+      "visitUs": "Nous rendre visite",
+      "address": "123 Rue Principale, Ville, Pays 12345",
+      "headquarters": "Notre siège social",
+      "callUs": "Appelez-nous",
+      "phone": "+1 (234) 567-890",
+      "hours": "Du lundi au vendredi, de 9h à 18h",
+      "emailUs": "Envoyez-nous un email",
+      "email": "info@bng-sarl.com",
+      "response": "Nous répondrons sous 24 heures"
+    },
+    "social": {
+      "followUs": "Suivez-nous sur les réseaux sociaux",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    }
+  },
+  "footer": {
+    "slogan": "Votre partenaire de confiance dans la distribution de poulet, engagé pour la qualité et la fiabilité.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "address1": "123 Rue Principale",
+    "address2": "Ville, Pays 12345",
+    "phone": "+1 (234) 567-890",
+    "email": "info@bng-sarl.com",
+    "followUs": "Suivez-nous",
+    "rights": "Tous droits réservés."
+  },
+  "stats": {
+    "mainTitle": "Ce Qui Nous Distingue",
+    "quality": {
+      "title": "Standards de Qualité Premium",
+      "description": "Chaque produit subit un contrôle qualité rigoureux, garantissant que seule la meilleure volaille arrive sur votre table."
+    },
+    "distribution": {
+      "title": "Réseau de Distribution Stratégique",
+      "description": "Grâce à une logistique optimisée et des partenariats stratégiques, nous assurons une livraison fraîche dans toutes les régions."
+    },
+    "reliability": {
+      "title": "Partenaire de Confiance",
+      "description": "Notre réputation repose sur un service constant, des pratiques transparentes et des relations à long terme."
+    }
+  }
+} 
