@@ -1,26 +1,37 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 
 const companies = [
   {
     id: 'bng',
-    name: 'BNG-SARL',
-    logo: '/images/bng.png',
+    name: 'HASTAVUK',
+    logo: '/images/hastavuk.png',
+    video: '/videos/Hastavuk.mp4',
     products: [
-      { id: 1, category: 'fresh', image: '/images/bng.png', price: '12.99' },
-      { id: 2, category: 'frozen', image: '/images/bng.png', price: '10.99' },
-      { id: 3, category: 'processed', image: '/images/bng.png', price: '8.99' },
+      { 
+        id: 1, 
+        category: 'frozen', 
+        image: '/images/pic11.jpg', 
+        detailImage: '/images/pic7.jpg',
+        description: 'Premium quality fresh products, carefully selected and harvested at peak ripeness.' 
+      }
     ]
   },
   {
     id: 'subsidiary',
-    name: 'BNG Subsidiary',
-    logo: '/images/subsidiary.png', // Use a placeholder or add your own
+    name: 'ERPILIC',
+    logo: '/images/erpilic.png',
+    video: '/videos/Erpilic.mp4',
     products: [
-      { id: 101, category: 'fresh', image: '/images/subsidiary.png', price: '11.99' },
-      { id: 102, category: 'frozen', image: '/images/subsidiary.png', price: '9.99' },
-      { id: 103, category: 'processed', image: '/images/subsidiary.png', price: '7.99' },
+      { id: 101, category: 'fresh', image: '/images/pic1.jpg', description: 'Farm-fresh products delivered directly to your table.' },
+      { id: 102, category: 'frozen', image: '/images/pic9.jpg', description: 'Premium frozen products for your convenience.' },
+      { id: 103, category: 'processed', image: '/images/pic3.jpg', description: 'Carefully processed products with attention to detail.' },
+      { id: 104, category: 'processed', image: '/images/pic4.jpg', description: 'High-quality processed products for your needs.' },
+      { id: 105, category: 'processed', image: '/images/pic5.jpg', description: 'Expertly crafted processed products.' },
+      { id: 106, category: 'Quarter', image: '/images/pic6.jpg', description: 'Whole chickens are placed in paper boxes; number of carcasses in each box depends on the weight of the chickens.' },
+      { id: 107, category: 'processed', image: '/images/pic8.jpg', description: 'Quality processed products for your table.' },
+      { id: 108, category: 'frozen', image: '/images/pic10.jpg', description: ' Carcasses without the viscera and the neck are polybagged and placed in paper boxes.' },
     ]
   }
 ];
@@ -28,11 +39,41 @@ const companies = [
 export default function Products() {
   const { t } = useTranslation();
   const [selectedCompany, setSelectedCompany] = useState(companies[0].id);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const videoRef = useRef(null);
   const company = companies.find(c => c.id === selectedCompany);
   const { scrollYProgress } = useScroll();
   
   const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.3]);
+
+  useEffect(() => {
+    // Start playing the video when the component mounts or company changes
+    if (videoRef.current) {
+      videoRef.current.currentTime = 0; // Reset to beginning
+      videoRef.current.play();
+    }
+
+    // Add event listener for when video ends
+    const handleVideoEnd = () => {
+      if (videoRef.current) {
+        videoRef.current.pause();
+      }
+    };
+
+    if (videoRef.current) {
+      videoRef.current.addEventListener('ended', handleVideoEnd);
+    }
+
+    // Cleanup function to stop the video when component unmounts
+    return () => {
+      if (videoRef.current) {
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
+        videoRef.current.removeEventListener('ended', handleVideoEnd);
+      }
+    };
+  }, [selectedCompany]); // Add selectedCompany as dependency
 
   return (
     <div className="min-h-screen bg-black relative">
@@ -89,6 +130,21 @@ export default function Products() {
             <img src={company.logo} alt={company.name} className="w-16 h-16 rounded-full object-cover border-2 border-[#D4AF37]/30" />
             <h2 className="text-3xl font-serif text-[#D4AF37]">{company.name}</h2>
           </div>
+          
+          {/* Company Video */}
+          <div className="mb-12 rounded-xl overflow-hidden">
+            <video 
+              ref={videoRef}
+              className="w-full aspect-video object-cover"
+              autoPlay
+              playsInline
+              poster={company.products[0]?.image}
+            >
+              <source src={company.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
           <AnimatePresence mode="wait">
             <motion.div
               key={company.id}
@@ -126,17 +182,7 @@ export default function Products() {
                           {t(`products.categories.${product.category}`)}
                         </h3>
                         <div className="h-px w-12 bg-gradient-to-r from-[#D4AF37]/30 to-transparent group-hover:w-full transition-all duration-500" />
-                        <p className="text-2xl font-light text-[#D4AF37]">
-                          ${product.price}
-                        </p>
-                        <motion.button
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
-                          className="w-full py-3 px-6 text-sm text-white tracking-wide relative group overflow-hidden rounded-lg"
-                        >
-                          <span className="relative z-10">{t('products.viewDetails')}</span>
-                          <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37] to-[#D4AF37]/50 opacity-10 group-hover:opacity-20 transition-opacity" />
-                        </motion.button>
+                      
                       </div>
                     </div>
                   </div>
@@ -146,6 +192,52 @@ export default function Products() {
           </AnimatePresence>
         </section>
       </div>
+
+      {/* Product Details Modal */}
+      <AnimatePresence>
+        {selectedProduct && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+            onClick={() => setSelectedProduct(null)}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="bg-black border border-[#D4AF37]/30 rounded-xl max-w-4xl w-full overflow-hidden"
+              onClick={e => e.stopPropagation()}
+            >
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="relative aspect-square">
+                  <img
+                    src={selectedProduct.detailImage}
+                    alt={t(`products.categories.${selectedProduct.category}`)}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-8 flex flex-col justify-center">
+                  <h3 className="text-3xl font-serif text-[#D4AF37] mb-4">
+                    {t(`products.categories.${selectedProduct.category}`)}
+                  </h3>
+                  <div className="h-px w-24 bg-gradient-to-r from-[#D4AF37]/30 to-transparent mb-6" />
+                  <p className="text-gray-300 text-lg leading-relaxed mb-8">
+                    {selectedProduct.description}
+                  </p>
+                  <button
+                    onClick={() => setSelectedProduct(null)}
+                    className="px-8 py-3 rounded-lg text-white border-2 border-[#D4AF37]/30 hover:border-[#D4AF37] transition-colors"
+                  >
+                    {t('Close')}
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 } 
