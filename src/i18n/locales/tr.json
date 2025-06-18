@@ -94,15 +94,12 @@
       "twitter": "Twitter",
       "linkedin": "LinkedIn",
       "instagram": "Instagram"
-<<<<<<< HEAD
-=======
     },
     "companyAddress": {
       "line1Local": "El Mina Güney, Nouakchott Güney"
     },
     "boutiqueAddress": {
       "line1Local": "No. 4, PFK, Socogim, Nouakchott Güney"
->>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
     }
   },
   "footer": {
@@ -114,9 +111,6 @@
     "phone": "+1 (234) 567-890",
     "email": "info@bng-sarl.com",
     "followUs": "Bizi Takip Edin",
-<<<<<<< HEAD
-    "rights": "Tüm hakları saklıdır."
-=======
     "rights": "Tüm hakları saklıdır.",
     "companyAddress": {
       "line1Local": "El Mina Güney, Nouakchott Güney"
@@ -124,7 +118,6 @@
     "boutiqueAddress": {
       "line1Local": "No. 4, PFK, Socogim, Nouakchott Güney"
     }
->>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
   },
   "stats": {
     "mainTitle": "Bizi Farklı Kılan",

@@ -94,19 +94,15 @@
       "twitter": "Twitter",
       "linkedin": "LinkedIn",
       "instagram": "Instagram"
-<<<<<<< HEAD
-=======
     },
     "companyAddress": {
       "title": "Company Address",
       "line1": "Lot 151 El Mina Sud Nouakchott - Mauritanie",
-      "line1Ar": "Lot 151  الميناء انواكشوط الجنوبية",
       "line1Local": "El Mina South, Nouakchott South"
     },
     "boutiqueAddress": {
       "title": "Boutique Address",
       "line1": "No:4 PFK Socogim Sid Nouakchott - Mauritanie",
-      "line1Ar": "رقم 4 حي PFK صوكوجيم انواكشوط الجنوبية",
       "line1Local": "No. 4, PFK, Socogim, Nouakchott South"
     },
     "phoneNumbers": {
@@ -115,7 +111,6 @@
       "dgNumber": "37992436",
       "commercial": "Commercial",
       "commercialNumber": "36116636"
->>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
     }
   },
   "footer": {
@@ -127,20 +122,15 @@
     "phone": "+1 (234) 567-890",
     "email": "info@bng-sarl.com",
     "followUs": "Follow Us",
-<<<<<<< HEAD
-    "rights": "All rights reserved."
-=======
     "rights": "All rights reserved.",
     "companyAddress": {
       "title": "Company Address",
       "line1": "Lot 151 El Mina Sud Nouakchott - Mauritanie",
-      "line1Ar": "Lot 151  الميناء انواكشوط الجنوبية",
       "line1Local": "El Mina South, Nouakchott South"
     },
     "boutiqueAddress": {
       "title": "Boutique Address",
       "line1": "No:4 PFK Socogim Sid Nouakchott - Mauritanie",
-      "line1Ar": "رقم 4 حي PFK صوكوجيم انواكشوط الجنوبية",
       "line1Local": "No. 4, PFK, Socogim, Nouakchott South"
     },
     "phoneNumbers": {
@@ -151,7 +141,6 @@
       "commercialNumber": "36116636"
     },
     "copyright": "All rights reserved."
->>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
   },
   "stats": {
     "mainTitle": "What Sets Us Apart",
@@ -167,12 +156,9 @@
       "title": "Trusted Partner",
       "description": "Our reputation is built on consistent service, transparent practices, and long-term relationships."
     }
-<<<<<<< HEAD
-=======
   },
   "common": {
     "close": "Close",
     "viewDetails": "View Details"
->>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
   }
 } 

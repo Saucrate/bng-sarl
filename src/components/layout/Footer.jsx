@@ -10,12 +10,8 @@ const fadeInUp = {
 };
 
 export default function Footer() {
-<<<<<<< HEAD
-  const { t } = useTranslation();
-=======
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === 'ar';
->>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
 
   const navigation = {
     main: [
@@ -64,188 +60,6 @@ export default function Footer() {
   };
 
   return (
-<<<<<<< HEAD
-    <footer className="relative bg-black">
-      {/* Pre-footer decorative section */}
-      <div className="relative h-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black" />
-        <div className="absolute inset-x-0 bottom-0">
-          <svg
-            className="w-full h-24 fill-current text-[#D4AF37] opacity-5"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" />
-          </svg>
-        </div>
-        <div className="absolute left-0 right-0 bottom-0 h-px bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent" />
-      </div>
-
-      {/* Main footer content */}
-      <div className="relative">
-        {/* Background patterns */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute inset-0" style={{
-            background: `
-              radial-gradient(circle at 0% 0%, #D4AF37 1px, transparent 1px),
-              radial-gradient(circle at 100% 100%, #D4AF37 1px, transparent 1px)
-            `,
-            backgroundSize: '40px 40px',
-            opacity: 0.05
-          }} />
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-black" />
-        </div>
-
-        {/* Vertical connecting lines */}
-        <div className="absolute top-0 left-[15%] w-px h-full bg-gradient-to-b from-[#D4AF37]/30 via-[#D4AF37]/10 to-transparent" />
-        <div className="absolute top-0 right-[15%] w-px h-full bg-gradient-to-b from-[#D4AF37]/30 via-[#D4AF37]/10 to-transparent" />
-
-        {/* Content */}
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-            {/* Logo Section */}
-            <motion.div
-              className="col-span-1 md:col-span-2 lg:col-span-1"
-              variants={fadeInUp}
-              initial="initial"
-              whileInView="whileInView"
-              viewport={{ once: true }}
-            >
-              <Link to="/" className="block relative group">
-                <div className="absolute -inset-4 bg-gradient-to-r from-[#D4AF37]/20 to-transparent rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-500" />
-                <div className="relative flex items-center">
-                  <img
-                    src="/images/bng (1).png"
-                    alt="BNG SARL"
-                    className="h-16 w-auto"
-                  />
-                  <div className="ml-4 h-16 w-px bg-gradient-to-b from-[#D4AF37]/30 to-transparent" />
-                </div>
-              </Link>
-              <div className="mt-6 space-y-4">
-                <div className="h-px w-24 bg-gradient-to-r from-[#D4AF37]/30 to-transparent" />
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  {t('footer.slogan')}
-                </p>
-              </div>
-            </motion.div>
-
-            {/* Navigation Links */}
-            <motion.div
-              className="grid grid-cols-2 gap-8 col-span-1 md:col-span-2 lg:col-span-2"
-              variants={fadeInUp}
-              initial="initial"
-              whileInView="whileInView"
-              viewport={{ once: true }}
-            >
-              <div>
-                <h3 className="text-[#D4AF37] text-sm font-light tracking-widest uppercase mb-6 relative">
-                  <span className="relative">
-                    {t('footer.navigation')}
-                    <div className="absolute -bottom-2 left-0 w-12 h-px bg-gradient-to-r from-[#D4AF37]/30 to-transparent" />
-                  </span>
-                </h3>
-                <nav className="flex flex-col space-y-4">
-                  {navigation.main.map((item) => (
-                    <motion.div
-                      key={item.name}
-                      className="group relative overflow-hidden"
-                      whileHover={{ x: 4 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <div className="absolute left-0 bottom-0 w-0 h-px bg-[#D4AF37]/30 group-hover:w-full transition-all duration-300" />
-                      <Link
-                        to={item.href}
-                        className="text-gray-300 hover:text-[#D4AF37] transition-colors duration-200 py-1"
-                      >
-                        {item.name}
-                      </Link>
-                    </motion.div>
-                  ))}
-                </nav>
-              </div>
-              <div>
-                <h3 className="text-[#D4AF37] text-sm font-light tracking-widest uppercase mb-6 relative">
-                  <span className="relative">
-                    {t('footer.contact')}
-                    <div className="absolute -bottom-2 left-0 w-12 h-px bg-gradient-to-r from-[#D4AF37]/30 to-transparent" />
-                  </span>
-                </h3>
-                <nav className="flex flex-col space-y-4">
-                  <div className="relative group">
-                    <p className="text-gray-300">{t('footer.address1')}</p>
-                    <div className="absolute left-0 bottom-0 w-0 h-px bg-[#D4AF37]/10 group-hover:w-full transition-all duration-300" />
-                  </div>
-                  <div className="relative group">
-                    <p className="text-gray-300">{t('footer.address2')}</p>
-                    <div className="absolute left-0 bottom-0 w-0 h-px bg-[#D4AF37]/10 group-hover:w-full transition-all duration-300" />
-                  </div>
-                  <motion.a
-                    href="tel:+1234567890"
-                    className="text-gray-300 hover:text-[#D4AF37] transition-colors duration-200 relative group"
-                    whileHover={{ x: 4 }}
-                  >
-                    <span>{t('footer.phone')}</span>
-                    <div className="absolute left-0 bottom-0 w-0 h-px bg-[#D4AF37]/30 group-hover:w-full transition-all duration-300" />
-                  </motion.a>
-                  <motion.a
-                    href="mailto:info@bng-sarl.com"
-                    className="text-gray-300 hover:text-[#D4AF37] transition-colors duration-200 relative group"
-                    whileHover={{ x: 4 }}
-                  >
-                    <span>{t('footer.email')}</span>
-                    <div className="absolute left-0 bottom-0 w-0 h-px bg-[#D4AF37]/30 group-hover:w-full transition-all duration-300" />
-                  </motion.a>
-                </nav>
-              </div>
-            </motion.div>
-
-            {/* Social Links */}
-            <motion.div
-              variants={fadeInUp}
-              initial="initial"
-              whileInView="whileInView"
-              viewport={{ once: true }}
-            >
-              <h3 className="text-[#D4AF37] text-sm font-light tracking-widest uppercase mb-6 relative">
-                <span className="relative">
-                  {t('footer.followUs')}
-                  <div className="absolute -bottom-2 left-0 w-12 h-px bg-gradient-to-r from-[#D4AF37]/30 to-transparent" />
-                </span>
-              </h3>
-              <div className="flex space-x-6">
-                {navigation.social.map((item) => (
-                  <motion.a
-                    key={item.name}
-                    href={item.href}
-                    className="text-gray-400 hover:text-[#D4AF37] transition-colors duration-200 relative group"
-                    whileHover={{ y: -4 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <span className="sr-only">{item.name}</span>
-                    <div className="absolute -inset-2 bg-[#D4AF37]/10 rounded-full blur opacity-0 group-hover:opacity-100 transition duration-300" />
-                    <item.icon className="h-6 w-6 relative" aria-hidden="true" />
-                  </motion.a>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-
-          {/* Bottom Section */}
-          <div className="mt-16 pt-8 relative">
-            <div className="absolute top-0 left-0 right-0">
-              <div className="h-px bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent" />
-            </div>
-
-            <div className="relative flex flex-col items-center space-y-4">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-px bg-gradient-to-r from-transparent to-[#D4AF37]/30" />
-                <span className="text-[#D4AF37] font-serif">BNG SARL</span>
-                <div className="w-12 h-px bg-gradient-to-l from-transparent to-[#D4AF37]/30" />
-              </div>
-              <p className="text-gray-400 text-sm">
-                &copy; {new Date().getFullYear()} BNG-SARL. {t('footer.rights')}
-=======
     <footer className="bg-black border-t border-[#D4AF37]/10">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -284,31 +98,15 @@ export default function Footer() {
               </p>
               <p className="text-gray-300">
                 <span className="text-[#D4AF37]">{t('footer.phoneNumbers.commercial')}:</span> {t('footer.phoneNumbers.commercialNumber')}
->>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
               </p>
             </div>
           </div>
         </div>
 
-<<<<<<< HEAD
-        {/* Bottom decorative wave */}
-        <div className="absolute bottom-0 left-0 right-0">
-          <div className="relative h-24">
-            <svg
-              className="absolute bottom-0 w-full h-24 fill-current text-[#D4AF37] opacity-5 transform rotate-180"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" />
-            </svg>
-            <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent" />
-          </div>
-=======
         <div className="mt-8 pt-8 border-t border-[#D4AF37]/10">
           <p className="text-center text-gray-400">
             © {new Date().getFullYear()} {t('footer.copyright')}
           </p>
->>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
         </div>
       </div>
     </footer>

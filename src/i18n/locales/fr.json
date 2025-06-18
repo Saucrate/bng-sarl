@@ -94,15 +94,12 @@
       "twitter": "Twitter",
       "linkedin": "LinkedIn",
       "instagram": "Instagram"
-<<<<<<< HEAD
-=======
     },
     "companyAddress": {
       "line1Local": "El Mina Sud, Nouakchott Sud"
     },
     "boutiqueAddress": {
       "line1Local": "N°4, PFK, Socogim, Nouakchott Sud"
->>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
     }
   },
   "footer": {
@@ -114,9 +111,6 @@
     "phone": "+1 (234) 567-890",
     "email": "info@bng-sarl.com",
     "followUs": "Suivez-nous",
-<<<<<<< HEAD
-    "rights": "Tous droits réservés."
-=======
     "rights": "Tous droits réservés.",
     "companyAddress": {
       "line1Local": "El Mina Sud, Nouakchott Sud"
@@ -124,7 +118,6 @@
     "boutiqueAddress": {
       "line1Local": "N°4, PFK, Socogim, Nouakchott Sud"
     }
->>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
   },
   "stats": {
     "mainTitle": "Ce Qui Nous Distingue",

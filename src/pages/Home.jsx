@@ -134,7 +134,7 @@ export default function Home() {
             style={{ y: parallaxY }}
           >
             <motion.img
-              src="/images/bng.png"
+              src="/images/bng (3).png"
               alt="BNG SARL"
               className="w-full h-full object-cover opacity-50"
               style={{ scale: 1.1 }}

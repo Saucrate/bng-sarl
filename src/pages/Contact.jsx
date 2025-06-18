@@ -78,11 +78,7 @@ const LuxuryChicken = () => {
 };
 
 export default function Contact() {
-<<<<<<< HEAD
-  const { t } = useTranslation();
-=======
   const { t, i18n } = useTranslation();
->>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
   const containerRef = useRef(null);
   
   const { scrollYProgress } = useScroll({
@@ -93,11 +89,8 @@ export default function Contact() {
   const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.3]);
 
-<<<<<<< HEAD
-=======
   const isRTL = i18n.language === 'ar';
 
->>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
   return (
     <div ref={containerRef} className="min-h-screen bg-black relative overflow-hidden">
       {/* Animated Background Pattern */}
@@ -117,110 +110,6 @@ export default function Contact() {
         }} />
       </motion.div>
 
-<<<<<<< HEAD
-      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        {/* Page Title */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="text-center mb-20"
-        >
-          <h1 className="text-5xl sm:text-7xl font-serif text-white mb-6 tracking-wider">
-            {t('contact.title')}
-          </h1>
-          <div className="h-px w-40 mx-auto bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
-          <p className="mt-8 text-lg text-gray-300 max-w-2xl mx-auto">
-            {t('contact.intro')}
-          </p>
-        </motion.div>
-
-        {/* Luxury Chicken Animation */}
-        <LuxuryChicken />
-
-        {/* Contact Information */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-          className="relative max-w-2xl mx-auto"
-        >
-          <div className="rounded-2xl overflow-hidden backdrop-blur-sm border border-[#D4AF37]/10">
-            <div className="p-8 bg-black/40">              
-              <div className="space-y-8">
-                {[
-                  {
-                    icon: <MapPinIcon className="h-6 w-6" />,
-                    label: t('contact.info.visitUs'),
-                    content: t('contact.info.address'),
-                    href: 'https://maps.google.com',
-                    description: t('contact.info.headquarters')
-                  },
-                  {
-                    icon: <PhoneIcon className="h-6 w-6" />,
-                    label: t('contact.info.callUs'),
-                    content: t('contact.info.phone'),
-                    href: 'tel:+1234567890',
-                    description: t('contact.info.hours')
-                  },
-                  {
-                    icon: <EnvelopeIcon className="h-6 w-6" />,
-                    label: t('contact.info.emailUs'),
-                    content: t('contact.info.email'),
-                    href: 'mailto:info@bng-sarl.com',
-                    description: t('contact.info.response')
-                  }
-                ].map((item, index) => (
-                  <motion.a
-                    key={item.label}
-                    href={item.href}
-                    className="group flex items-start gap-6 p-6 rounded-lg hover:bg-[#D4AF37]/5 transition-all duration-300"
-                    whileHover={{ x: 10 }}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                  >
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#D4AF37]/10 flex items-center justify-center text-[#D4AF37] group-hover:bg-[#D4AF37]/20 transition-colors">
-                      {item.icon}
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-lg text-[#D4AF37] mb-1 font-serif">{item.label}</p>
-                      <p className="text-xl text-white font-light mb-2">{item.content}</p>
-                      <p className="text-sm text-gray-400">{item.description}</p>
-                    </div>
-                    <ChevronRightIcon className="w-5 h-5 text-[#D4AF37]/30 group-hover:text-[#D4AF37] ml-auto transform group-hover:translate-x-1 transition-all self-center" />
-                  </motion.a>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Social Links */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.8 }}
-            className="mt-12 text-center"
-          >
-            <p className="text-[#D4AF37]/70 mb-4">{t('contact.social.followUs')}</p>
-            <div className="flex justify-center gap-6">
-              {['facebook', 'twitter', 'linkedin', 'instagram'].map((social, index) => (
-                <motion.a
-                  key={social}
-                  href="#"
-                  className="text-gray-400 hover:text-[#D4AF37] transition-colors"
-                  whileHover={{ scale: 1.1 }}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: 1 + index * 0.1 }}
-                >
-                  {t(`contact.social.${social}`)}
-                </motion.a>
-              ))}
-            </div>
-          </motion.div>
-        </motion.div>
-=======
       <div className="relative max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -293,7 +182,6 @@ export default function Contact() {
             </div>
           </motion.div>
         </div>
->>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
       </div>
     </div>
   );
