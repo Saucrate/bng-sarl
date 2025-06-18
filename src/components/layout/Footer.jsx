@@ -10,7 +10,12 @@ const fadeInUp = {
 };
 
 export default function Footer() {
+<<<<<<< HEAD
   const { t } = useTranslation();
+=======
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === 'ar';
+>>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
 
   const navigation = {
     main: [
@@ -59,6 +64,7 @@ export default function Footer() {
   };
 
   return (
+<<<<<<< HEAD
     <footer className="relative bg-black">
       {/* Pre-footer decorative section */}
       <div className="relative h-24 overflow-hidden">
@@ -239,11 +245,52 @@ export default function Footer() {
               </div>
               <p className="text-gray-400 text-sm">
                 &copy; {new Date().getFullYear()} BNG-SARL. {t('footer.rights')}
+=======
+    <footer className="bg-black border-t border-[#D4AF37]/10">
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Company Address */}
+          <div>
+            <h3 className="text-lg font-serif text-[#D4AF37] mb-4">{t('footer.companyAddress.title')}</h3>
+            <div className="space-y-2">
+              <p className="text-gray-300" dir={isRTL ? 'rtl' : 'ltr'}>
+                {t('footer.companyAddress.line1')}
+              </p>
+              <p className="text-gray-300" dir={isRTL ? 'rtl' : 'ltr'}>
+                {t('footer.companyAddress.line1Local')}
+              </p>
+            </div>
+          </div>
+
+          {/* Boutique Address */}
+          <div>
+            <h3 className="text-lg font-serif text-[#D4AF37] mb-4">{t('footer.boutiqueAddress.title')}</h3>
+            <div className="space-y-2">
+              <p className="text-gray-300" dir={isRTL ? 'rtl' : 'ltr'}>
+                {t('footer.boutiqueAddress.line1')}
+              </p>
+              <p className="text-gray-300" dir={isRTL ? 'rtl' : 'ltr'}>
+                {t('footer.boutiqueAddress.line1Local')}
+              </p>
+            </div>
+          </div>
+
+          {/* Contact Numbers */}
+          <div>
+            <h3 className="text-lg font-serif text-[#D4AF37] mb-4">{t('footer.phoneNumbers.title')}</h3>
+            <div className="space-y-2">
+              <p className="text-gray-300">
+                <span className="text-[#D4AF37]">{t('footer.phoneNumbers.dg')}:</span> {t('footer.phoneNumbers.dgNumber')}
+              </p>
+              <p className="text-gray-300">
+                <span className="text-[#D4AF37]">{t('footer.phoneNumbers.commercial')}:</span> {t('footer.phoneNumbers.commercialNumber')}
+>>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
               </p>
             </div>
           </div>
         </div>
 
+<<<<<<< HEAD
         {/* Bottom decorative wave */}
         <div className="absolute bottom-0 left-0 right-0">
           <div className="relative h-24">
@@ -256,6 +303,12 @@ export default function Footer() {
             </svg>
             <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent" />
           </div>
+=======
+        <div className="mt-8 pt-8 border-t border-[#D4AF37]/10">
+          <p className="text-center text-gray-400">
+            © {new Date().getFullYear()} {t('footer.copyright')}
+          </p>
+>>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
         </div>
       </div>
     </footer>

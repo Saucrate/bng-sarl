@@ -70,6 +70,28 @@
   },
   "contact": {
     "title": "اتصل بنا",
+<<<<<<< HEAD
+=======
+    "companyAddress": {
+      "title": "عنوان الشركة",
+      "line1": "Lot 151 El Mina Sud Nouakchott - Mauritanie",
+      "line1Ar": "Lot 151  الميناء انواكشوط الجنوبية",
+      "line1Local": "الميناء انواكشوط الجنوبية"
+    },
+    "boutiqueAddress": {
+      "title": "عنوان البوتيك",
+      "line1": "No:4 PFK Socogim Sid Nouakchott - Mauritanie",
+      "line1Ar": "رقم 4 حي PFK صوكوجيم انواكشوط الجنوبية",
+      "line1Local": "رقم 4 حي PFK صوكوجيم انواكشوط الجنوبية"
+    },
+    "phoneNumbers": {
+      "title": "أرقام الاتصال",
+      "dg": "المدير العام",
+      "dgNumber": "37992436",
+      "commercial": "التجاري",
+      "commercialNumber": "36116636"
+    },
+>>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
     "form": {
       "name": "الاسم",
       "email": "البريد الإلكتروني",
@@ -105,7 +127,31 @@
     "phone": "+1 (234) 567-890",
     "email": "info@bng-sarl.com",
     "followUs": "تابعنا",
+<<<<<<< HEAD
     "rights": "جميع الحقوق محفوظة."
+=======
+    "rights": "جميع الحقوق محفوظة.",
+    "companyAddress": {
+      "title": "عنوان الشركة",
+      "line1": "Lot 151 El Mina Sud Nouakchott - Mauritanie",
+      "line1Ar": "Lot 151  الميناء انواكشوط الجنوبية",
+      "line1Local": "الميناء انواكشوط الجنوبية"
+    },
+    "boutiqueAddress": {
+      "title": "عنوان البوتيك",
+      "line1": "No:4 PFK Socogim Sid Nouakchott - Mauritanie",
+      "line1Ar": "رقم 4 حي PFK صوكوجيم انواكشوط الجنوبية",
+      "line1Local": "رقم 4 حي PFK صوكوجيم انواكشوط الجنوبية"
+    },
+    "phoneNumbers": {
+      "title": "أرقام الاتصال",
+      "dg": "المدير العام",
+      "dgNumber": "37992436",
+      "commercial": "التجاري",
+      "commercialNumber": "36116636"
+    },
+    "copyright": "جميع الحقوق محفوظة."
+>>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
   },
   "stats": {
     "mainTitle": "ما يميزنا",
@@ -121,5 +167,12 @@
       "title": "شريك موثوق",
       "description": "تستند سمعتنا على الخدمة المتسقة والممارسات الشفافة والعلاقات طويلة الأمد."
     }
+<<<<<<< HEAD
+=======
+  },
+  "common": {
+    "close": "إغلاق",
+    "viewDetails": "عرض التفاصيل"
+>>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
   }
 } 

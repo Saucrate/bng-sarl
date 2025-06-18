@@ -78,7 +78,11 @@ const LuxuryChicken = () => {
 };
 
 export default function Contact() {
+<<<<<<< HEAD
   const { t } = useTranslation();
+=======
+  const { t, i18n } = useTranslation();
+>>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
   const containerRef = useRef(null);
   
   const { scrollYProgress } = useScroll({
@@ -89,6 +93,11 @@ export default function Contact() {
   const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.3]);
 
+<<<<<<< HEAD
+=======
+  const isRTL = i18n.language === 'ar';
+
+>>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
   return (
     <div ref={containerRef} className="min-h-screen bg-black relative overflow-hidden">
       {/* Animated Background Pattern */}
@@ -108,6 +117,7 @@ export default function Contact() {
         }} />
       </motion.div>
 
+<<<<<<< HEAD
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         {/* Page Title */}
         <motion.div
@@ -210,6 +220,80 @@ export default function Contact() {
             </div>
           </motion.div>
         </motion.div>
+=======
+      <div className="relative max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="text-center mb-16"
+        >
+          <h1 className="text-5xl sm:text-7xl font-light text-white mb-6 tracking-wide">
+            {t('contact.title')}
+          </h1>
+          <div className="h-px w-32 mx-auto bg-gradient-to-r from-transparent via-[#D4AF37]/30 to-transparent" />
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+          {/* Company Address */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2 }}
+            className="bg-black/40 backdrop-blur-sm p-8 rounded-xl border border-[#D4AF37]/30"
+          >
+            <h2 className="text-2xl font-serif text-[#D4AF37] mb-6">{t('contact.companyAddress.title')}</h2>
+            <div className="space-y-4">
+              <p className="text-white text-lg" dir={isRTL ? 'rtl' : 'ltr'}>
+                {t('contact.companyAddress.line1')}
+              </p>
+              <p className="text-white text-lg" dir={isRTL ? 'rtl' : 'ltr'}>
+                {t('contact.companyAddress.line1Local')}
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Boutique Address */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3 }}
+            className="bg-black/40 backdrop-blur-sm p-8 rounded-xl border border-[#D4AF37]/30"
+          >
+            <h2 className="text-2xl font-serif text-[#D4AF37] mb-6">{t('contact.boutiqueAddress.title')}</h2>
+            <div className="space-y-4">
+              <p className="text-white text-lg" dir={isRTL ? 'rtl' : 'ltr'}>
+                {t('contact.boutiqueAddress.line1')}
+              </p>
+              <p className="text-white text-lg" dir={isRTL ? 'rtl' : 'ltr'}>
+                {t('contact.boutiqueAddress.line1Local')}
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Contact Numbers */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="md:col-span-2 bg-black/40 backdrop-blur-sm p-8 rounded-xl border border-[#D4AF37]/30"
+          >
+            <h2 className="text-2xl font-serif text-[#D4AF37] mb-6">{t('contact.phoneNumbers.title')}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <p className="text-white text-lg">
+                  <span className="text-[#D4AF37]">{t('contact.phoneNumbers.dg')}:</span> {t('contact.phoneNumbers.dgNumber')}
+                </p>
+              </div>
+              <div>
+                <p className="text-white text-lg">
+                  <span className="text-[#D4AF37]">{t('contact.phoneNumbers.commercial')}:</span> {t('contact.phoneNumbers.commercialNumber')}
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+>>>>>>> b36c0cc (Make address lines fully translatable in all languages and update Contact/Footer)
       </div>
     </div>
   );
